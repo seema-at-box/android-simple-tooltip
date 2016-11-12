@@ -294,11 +294,11 @@ public class SimpleTooltip implements PopupWindow.OnDismissListener {
     }
 
     /**
-     * <div class="pt">Indica se o tooltip está sendo exibido na tela.</div>
-     * <div class=en">Indicate whether this tooltip is showing on screen.</div>
+     * Indica se o tooltip está sendo exibido na tela.
+     * Indicate whether this tooltip is showing on screen.
      *
-     * @return <div class="pt"><tt>true</tt> se o tooltip estiver sendo exibido, <tt>false</tt> caso contrário</div>
-     * <div class="en"><tt>true</tt> if the popup is showing, <tt>false</tt> otherwise</div>
+     * @return <tt>true</tt> se o tooltip estiver sendo exibido, <tt>false</tt> caso contrário
+     * <tt>true</tt> if the popup is showing, <tt>false</tt> otherwise
      */
     public boolean isShowing() {
         return mPopupWindow != null && mPopupWindow.isShowing();

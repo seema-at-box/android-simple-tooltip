@@ -38,9 +38,9 @@ import android.graphics.Shader;
 import android.view.View;
 
 /**
- * View que faz o efeito de escurecer a tela e dar destaque no ponto de ancoragem.<br>
+ * View que faz o efeito de escurecer a tela e dar destaque no ponto de ancoragem.
  * Implementação baseada na resposta: http://stackoverflow.com/a/34702884/2826279
- * <p/>
+ *
  * Created by douglas on 09/05/16.
  */
 @SuppressLint("ViewConstructor")
