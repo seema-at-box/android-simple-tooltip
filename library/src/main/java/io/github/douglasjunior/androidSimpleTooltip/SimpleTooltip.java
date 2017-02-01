@@ -169,8 +169,13 @@ public class SimpleTooltip implements PopupWindow.OnDismissListener {
         mContentLayout.getViewTreeObserver().addOnGlobalLayoutListener(mAutoDismissLayoutListener);
 
         mRootView.post(new Runnable() {
+            @TargetApi(Build.VERSION_CODES.HONEYCOMB)
             @Override
             public void run() {
+                if(mAnchorView.isDirty()) {
+                    Log.w(TAG, "anchor view is dirty, so we should not draw on top of that");
+                    return;
+                }
                 if (mRootView.isShown()) {
                     mPopupWindow.showAtLocation(mRootView, Gravity.NO_GRAVITY, mRootView.getWidth(), mRootView.getHeight());
                 }else
